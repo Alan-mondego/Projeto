@@ -112,20 +112,28 @@
       }
   }
   
-  @media (max-width: 480px) {
-      form {
-          padding: 10px; /* Reduz ainda mais o padding do formulário */
-          font-size: 16px; /* Reduz o tamanho da fonte */
-      }
+/* Ajustes responsivos para telas menores */
+@media screen and (max-width: 480px) {
+    body {
+      padding: 10px;
+      align-items: center;
+    }
   
-      .input-user input {
-          height: 40px; /* Reduz a altura do input */
-          font-size: 14px; /* Reduz o tamanho da fonte */
-      }
+    section.img_formulario {
+      width: 100%;
+      padding: 15px;
+    }
   
-      .botao-redefinir {
-          width: 160px; /* Reduz a largura do botão */
-          height: 40px; /* Reduz a altura do botão */
-          font-size: 14px; /* Reduz o tamanho da fonte */
-      }
+    input, select {
+      max-width: 100%;
+    }
+  
+    .botoes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    button {
+      width: 100%;
+    }
   }
